@@ -5,7 +5,7 @@ region = "ap-southeast-1"
 
 resource "aws_instance" "one" {
   ami             = "ami-0b825ad86ddcfb907"
-  instance_type   = "t2.micro"
+  instance_type   = "t2.medium"
   key_name        = "terraform"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1a"
@@ -24,7 +24,7 @@ EOF
 
 resource "aws_instance" "two" {
   ami             = "ami-0b825ad86ddcfb907"
-  instance_type   = "t2.micro"
+  instance_type   = "t2.medium"
   key_name        = "terraform"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1b"
@@ -43,7 +43,7 @@ EOF
 
 resource "aws_instance" "three" {
   ami             = ""ami-0b825ad86ddcfb907"
-  instance_type   = "t2.micro"
+  instance_type   = "t2.medium"
   key_name        = "terraform"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1a"
@@ -54,7 +54,7 @@ resource "aws_instance" "three" {
 
 resource "aws_instance" "four" {
   ami             = "ami-0b825ad86ddcfb907"
-  instance_type   = "t2.micro"
+  instance_type   = "t2.medium"
   key_name        = "terraform"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1b"
